@@ -1,0 +1,8 @@
+name: caller
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  call:
+    uses: PDFtoMark/gab-poc-intcallee/.github/workflows/callee.yml@main
